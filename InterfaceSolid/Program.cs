@@ -1,12 +1,37 @@
 ﻿using System;
+using InterfaceSolid.Air;
+using InterfaceSolid.Ground;
+using InterfaceSolid.Water;
 
 namespace InterfaceSolid
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+
+            // Build a collection of all vehicles that fly
+            var cessna = new Cessna();
+            var archer = new PiperArcher();
+
+            // With a single `foreach`, have each vehicle Fly()
+
+
+
+            // Build a collection of all vehicles that operate on roads
+            var motorcycle = new Motorcycle();
+            var ambulance = new Ambulance();
+
+            // With a single `foreach`, have each road vehicle Drive()
+
+
+
+            // Build a collection of all vehicles that operate on water
+            var jetSki = new JetSki();
+            var ferry = new Ferry();
+
+            // With a single `foreach`, have each water vehicle Drive()
         }
+
     }
 }
