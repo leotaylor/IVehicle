@@ -12,13 +12,8 @@ namespace InterfaceSolid._Interface
         bool Winged { get; }
         string TransmissionType { get; }
         double EngineVolume { get; }
-        double MaxWaterSpeed { get; }
-        double MaxLandSpeed { get; }
-        double MaxAirSpeed { get; }
 
         void Start();
         void Stop();
-        void Drive();
-        void Fly();
     }
 }

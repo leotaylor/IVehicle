@@ -5,36 +5,29 @@ using InterfaceSolid._Interface;
 
 namespace InterfaceSolid.Ground
 {
-    class Ambulance : IVehicle
+    class Ambulance : ILandCraft
     {
         public int Wheels { get; set; } = 2;
         public int Doors { get; set; } = 0;
-        public int PassengerCapacity { get; set; }
+        public int PassengerCapacity { get; set; } = 1;
         public bool Winged { get; set; } = false;
         public string TransmissionType { get; set; } = "Manual";
-        public double EngineVolume { get; set; } = 1.3;
-        public double MaxWaterSpeed { get; set; }
+        public double EngineVolume { get; set; } = 6;
         public double MaxLandSpeed { get; set; } = 160.4;
-        public double MaxAirSpeed { get; set; }
 
         public void Drive()
         {
             Console.WriteLine("The Ambulance wails down the highway");
         }
 
-        public void Fly()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Start()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The amublance is needed for an emergency.");
         }
 
         public void Stop()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The Ambulance has arrived.");
         }
     }
 }

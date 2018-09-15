@@ -5,22 +5,15 @@ using InterfaceSolid._Interface;
 
 namespace InterfaceSolid.Air
 {
-    public class PiperArcher : IVehicle
+    public class PiperArcher : IAircraft
     {
         public int Wheels { get; set; } = 3;
-        public int Doors { get; set; } = 3;
-        public int PassengerCapacity { get; set; } = 113;
+        public int Doors { get; set; } = 2;
+        public int PassengerCapacity { get; set; } = 3;
         public bool Winged { get; set; } = true;
         public string TransmissionType { get; set; } = "None";
-        public double EngineVolume { get; set; } = 31.1;
-        public double MaxWaterSpeed { get; set; }
-        public double MaxLandSpeed { get; set; }
-        public double MaxAirSpeed { get; set; } = 309.0;
-
-        public void Drive()
-        {
-            throw new NotImplementedException();
-        }
+        public double EngineVolume { get; set; } = 32.1;
+        public double MaxAirSpeed { get; set; } = 410.0;
 
         public void Fly()
         {
@@ -29,12 +22,12 @@ namespace InterfaceSolid.Air
 
         public void Start()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The Archer Fires right up.");
         }
 
         public void Stop()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The Archer lands safely.");
         }
     }
 }
