@@ -27,7 +27,7 @@ namespace InterfaceSolid.Ground
 
         public void Stop()
         {
-            Console.WriteLine("The Motorcycle skids to a stop.");
+            Console.WriteLine("The Motorcycle slides to a stop.");
         }
     }
 

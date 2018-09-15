@@ -27,7 +27,7 @@ namespace InterfaceSolid.Water
 
         public void Stop()
         {
-            Console.WriteLine("The Ferry is off.");
+            Console.WriteLine("The Ferry arrived at the other side of the lake.");
         }
     }
 }

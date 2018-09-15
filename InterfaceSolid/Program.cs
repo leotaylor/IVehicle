@@ -22,7 +22,10 @@ namespace InterfaceSolid
 
             foreach(var aircraft in airVehicles)
             {
+                aircraft.Start();
                 aircraft.Fly();
+                aircraft.Stop();
+                Console.ReadLine();
             }
 
 
@@ -37,7 +40,10 @@ namespace InterfaceSolid
 
             foreach(var vehicle in landVehicles)
             {
+                vehicle.Start();
                 vehicle.Drive();
+                vehicle.Stop();
+                Console.ReadLine();
             }
 
 
@@ -46,15 +52,17 @@ namespace InterfaceSolid
             var jetSki = new JetSki();
             var ferry = new Ferry();
 
-            var waterVehicles = new List<IWaterCraft> { jetSki, ferry };
+            var waterVehicles = new List<IWaterCraft> { ferry, jetSki };
 
             // With a single `foreach`, have each water vehicle Drive()
             
             foreach(var waterCraft in waterVehicles)
             {
+                waterCraft.Start();
                 waterCraft.Drive();
+                waterCraft.Stop();
+                Console.ReadLine();
             }
-            Console.ReadLine();
         }
 
     }

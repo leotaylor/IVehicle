@@ -27,7 +27,7 @@ namespace InterfaceSolid.Water
 
         public void Stop()
         {
-            Console.WriteLine("The JetSki comes to a stop.");
+            Console.WriteLine("The JetSki driven by Jason Stathom gets eaten by a Megalodon.");
         }
     }
 }

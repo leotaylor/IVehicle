@@ -17,7 +17,7 @@ namespace InterfaceSolid.Air
 
         public void Fly()
         {
-            Console.WriteLine("The Archer effortlessly glides through the clouds like a gleaming god of the Sun");
+            Console.WriteLine("The Archer effortlessly glides through the clouds like the gleaming god of the Sun it is.");
         }
 
         public void Start()
